@@ -14,17 +14,14 @@ namespace Day1_Array
             {
                 #region Explicitly Array Declaration & Initializing
 
-                //String Array initialization syntax using the new keyword.
                 string[] stringArray = new string[] { "one", "two", "three" };
                 Console.WriteLine("\nstringArray elements are:" + " " + stringArray[0] + " " + stringArray[1] + " " + stringArray[2]);
                 Console.WriteLine("Total stringArray has {0} elements", stringArray.Length);
 
-                //Boolean Array initialization syntax without using the new keyword.
                 bool[] boolArray = { false, false, true };
                 Console.WriteLine("\nBoolean Array elements are:" + " " + boolArray[0] + " " + boolArray[1] + " " + boolArray[2]);
                 Console.WriteLine("boolArray has {0} elements", boolArray.Length);
 
-                //Int Array initialization with new keyword and size.
                 int[] intArray = new int[4] { 20, 22, 23, 0 };
                 Console.WriteLine("\nInteger Array elements are:" + " " + intArray[0] + " " + intArray[1] + " " + intArray[2]);
                 Console.WriteLine("intArray has {0} elements", intArray.Length);
@@ -87,15 +84,14 @@ namespace Day1_Array
             try
             {
                 Console.WriteLine("=> Jagged multidimensional array.");
-                // A jagged MD array (i.e., an array of arrays).
-                // Here we have an array of 5 different arrays. 
+
                 int[][] myJagArray = new int[5][];
 
-                // Create the jagged array.
+
                 for (int i = 0; i < myJagArray.Length; i++)
                             myJagArray[i] = new int[i + 7]; 
  
-                // Print each row (remember, each element is defaulted to zero!).
+ 
                 for(int i = 0; i < 5; i++)
                 {
                     for(int j = 0; j < myJagArray[i].Length; j++)

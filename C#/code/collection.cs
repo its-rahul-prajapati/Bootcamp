@@ -11,7 +11,6 @@ namespace ModelClassCollectionList
     {
         static void Main(string[] args)
         {
-            //Single Model Class Object.
             MemberModelcs MMC = new MemberModelcs();
 
             MMC.MemberId = 1;
@@ -28,7 +27,6 @@ namespace ModelClassCollectionList
             Console.WriteLine("Member Email Id:{0}", MMC.MemberEmailId);
             Console.WriteLine("Member Gender:{0}", MMC.MemberGender);
 
-            //List Of Model Class Object - Multiple Model Class.
             int NoOfMember;
             List<MemberModelcs> MMCList = new List<MemberModelcs>();
 
